@@ -4,7 +4,7 @@ const gTTS = require('gtts');
 const fs = require("fs");
 export async function POST(req: NextRequest, res: NextResponse) {
     const data = await req.json();
-    const filePath = process.cwd() + '/tmp/Voice.mp3';
+    const filePath = '/tmp/Voice.mp3';
 
 
     try {
